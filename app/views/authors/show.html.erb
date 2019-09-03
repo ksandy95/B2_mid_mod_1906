@@ -1,0 +1,8 @@
+<%= @author.name %>
+
+<% @author.books.each do |book| %>
+  <p><%= book.title %></p>
+<% end %>
+
+
+<p>Average Page Count: <%= @author.average_page_count %></p>
